@@ -59,6 +59,7 @@ client.connect(err => {
     collection.find({})
     .toArray( (err, documents) => {
       res.send(documents)
+      console.log(documents)
     } )
   })
 

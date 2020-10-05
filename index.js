@@ -55,7 +55,7 @@ client.connect(err => {
   // perform actions on the collection object
 
   // for getting all registered volunteer event for admin only
-  app.get('/volunteer/admin', (req, res) => {
+  app.get('/', (req, res) => {
     collection.find({})
     .toArray( (err, documents) => {
       res.send(documents)
